@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" total="4" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="95118" started-at="2020-08-14T09:26:15Z" finished-at="2020-08-14T09:27:50Z">
+    <groups>
+      <group name="smoke">
+        <method signature="HomePageTest.searchItemTest()[pri:0, instance:testpages.HomePageTest@604ed9f0]" name="searchItemTest" class="testpages.HomePageTest"/>
+      </group> <!-- smoke -->
+    </groups>
+    <test name="Default test" duration-ms="95118" started-at="2020-08-14T09:26:15Z" finished-at="2020-08-14T09:27:50Z">
+      <class name="testpages.HomePageTest">
+        <test-method status="PASS" signature="setUpHomePage()[pri:0, instance:testpages.HomePageTest@604ed9f0]" name="setUpHomePage" is-config="true" duration-ms="23202" started-at="2020-08-14T14:56:15Z" finished-at="2020-08-14T14:56:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpHomePage -->
+        <test-method status="FAIL" signature="searchItemTest()[pri:0, instance:testpages.HomePageTest@604ed9f0]" name="searchItemTest" duration-ms="3611" started-at="2020-08-14T14:56:38Z" finished-at="2020-08-14T14:56:42Z">
+          <exception class="org.openqa.selenium.StaleElementReferenceException">
+            <message>
+              <![CDATA[stale element reference: element is not attached to the page document
+  (Session info: chrome=84.0.4147.125)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'DESKTOP-JRH31QL', ip: '192.168.1.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.125, chrome: {chromedriverVersion: 84.0.4147.30 (48b3e868b4cc0..., userDataDir: C:\Users\Cimple\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:2995}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 6d33f8933604b7eadab842f95da9a95e]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=84.0.4147.125)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'DESKTOP-JRH31QL', ip: '192.168.1.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.125, chrome: {chromedriverVersion: 84.0.4147.30 (48b3e868b4cc0..., userDataDir: C:\Users\Cimple\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:2995}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 6d33f8933604b7eadab842f95da9a95e
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.lambda$new$0(EventFiringWebDriver.java:403)
+	at com.sun.proxy.$Proxy13.click(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.click(EventFiringWebDriver.java:416)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy12.click(Unknown Source)
+	at testpages.HomePageTest.searchItemTest(HomePageTest.java:56)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1191)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
+	at org.testng.TestNG.run(TestNG.java:1024)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchItemTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testpages.HomePageTest@604ed9f0]" name="tearDown" is-config="true" duration-ms="867" started-at="2020-08-14T14:56:42Z" finished-at="2020-08-14T14:56:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUpHomePage()[pri:0, instance:testpages.HomePageTest@604ed9f0]" name="setUpHomePage" is-config="true" duration-ms="20018" started-at="2020-08-14T14:56:43Z" finished-at="2020-08-14T14:57:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpHomePage -->
+        <test-method status="PASS" signature="homePageTitleTest()[pri:1, instance:testpages.HomePageTest@604ed9f0]" name="homePageTitleTest" duration-ms="20" started-at="2020-08-14T14:57:03Z" finished-at="2020-08-14T14:57:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- homePageTitleTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testpages.HomePageTest@604ed9f0]" name="tearDown" is-config="true" duration-ms="808" started-at="2020-08-14T14:57:03Z" finished-at="2020-08-14T14:57:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUpHomePage()[pri:0, instance:testpages.HomePageTest@604ed9f0]" name="setUpHomePage" is-config="true" duration-ms="20261" started-at="2020-08-14T14:57:03Z" finished-at="2020-08-14T14:57:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpHomePage -->
+        <test-method status="PASS" signature="validateCorrectUserNameTest()[pri:2, instance:testpages.HomePageTest@604ed9f0]" name="validateCorrectUserNameTest" duration-ms="2782" started-at="2020-08-14T14:57:24Z" finished-at="2020-08-14T14:57:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateCorrectUserNameTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testpages.HomePageTest@604ed9f0]" name="tearDown" is-config="true" duration-ms="750" started-at="2020-08-14T14:57:26Z" finished-at="2020-08-14T14:57:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUpHomePage()[pri:0, instance:testpages.HomePageTest@604ed9f0]" name="setUpHomePage" is-config="true" duration-ms="21934" started-at="2020-08-14T14:57:27Z" finished-at="2020-08-14T14:57:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpHomePage -->
+        <test-method status="PASS" signature="validateCartItemQuantityTest()[pri:3, instance:testpages.HomePageTest@604ed9f0]" name="validateCartItemQuantityTest" duration-ms="57" started-at="2020-08-14T14:57:49Z" finished-at="2020-08-14T14:57:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateCartItemQuantityTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testpages.HomePageTest@604ed9f0]" name="tearDown" is-config="true" duration-ms="745" started-at="2020-08-14T14:57:49Z" finished-at="2020-08-14T14:57:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testpages.HomePageTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

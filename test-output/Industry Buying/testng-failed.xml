@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Industry Buying]">
+  <test name="Regression(failed)">
+    <classes>
+      <class name="testpages.SignInPageTest">
+        <methods>
+          <include name="launchURL"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- testpages.SignInPageTest -->
+      <class name="testpages.HomePageTest">
+        <methods>
+          <include name="validateCorrectUserNameTest"/>
+          <include name="homePageTitleTest"/>
+          <include name="searchItemTest"/>
+          <include name="validateCartItemQuantityTest"/>
+          <include name="setUpHomePage"/>
+        </methods>
+      </class> <!-- testpages.HomePageTest -->
+    </classes>
+  </test> <!-- Regression(failed) -->
+</suite> <!-- Failed suite [Industry Buying] -->

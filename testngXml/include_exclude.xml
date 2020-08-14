@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Industry Buying" verbose="1">
+	<test name="Regression">
+		<classes>
+			<class name="testpages.SignInPageTest" />
+			<methods>
+				<include name="verifyWelcomeToSignInPageTextTest" />
+			</methods>
+
+			<class name="testpages.HomePageTest" />
+			<methods>
+				<exclude name="searchItemTest" />
+			</methods>
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
